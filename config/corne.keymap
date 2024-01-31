@@ -35,9 +35,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH        &kp DLLR   &kp PRCNT     &kp CARET             &kp AMPS               &kp KP_MULTIPLY  &kp EQUAL             &kp BACKSPACE  &trans
-&trans  &kp TILDE        &kp EXCLAMATION  &kp QUESTION    &kp MINUS  &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT         &kp NON_US_BACKSLASH  &kp ENTER      &trans
-&trans  &kp TILDE        &kp GRAVE        &kp UNDERSCORE  &kp EQUAL  &kp PERIOD    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LBRC         &kp RBRC              &to 3          &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH        &kp DLLR   &kp PRCNT     &kp CARET             &kp AMPS               &kp KP_MULTIPLY  &kp EQUAL  &kp NON_US_BACKSLASH  &trans
+&trans  &kp GRAVE        &kp EXCLAMATION  &kp QUESTION    &kp MINUS  &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT         &kp MINUS  &kp SLASH             &trans
+&trans  &kp SEMICOLON    &kp TILDE        &kp UNDERSCORE  &kp EQUAL  &kp PERIOD    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LBRC         &kp RBRC   &to 3                 &trans
                                           &kp LGUI        &to 0      &trans        &trans                &to 2                  &kp RALT
             >;
         };
