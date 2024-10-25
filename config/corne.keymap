@@ -23,7 +23,7 @@
 &kp TAB     &kp SQT        &kp COMMA  &kp PERIOD  &kp P  &kp Y        &kp F           &kp G  &kp C     &kp R  &kp L  &kp BSPC
 &kp ESCAPE  &kp A          &kp O      &kp E       &kp U  &kp I        &kp D           &kp H  &kp T     &kp N  &kp S  &kp MINUS
 &kp LCTRL   &kp SEMICOLON  &kp Q      &kp J       &kp K  &kp X        &kp B           &kp M  &kp W     &kp V  &kp Z  &kp ENTER
-                                      &kp LGUI    &mo 2  &kp SPACE    &kp LEFT_SHIFT  &mo 1  &kp RALT
+                                      &kp LGUI    &mo 1  &kp SPACE    &kp LEFT_SHIFT  &mo 2  &kp RALT
             >;
         };
 
@@ -35,19 +35,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4     &kp N5        &kp NUMBER_6          &kp N7                 &kp N8           &kp N9                &kp N0     &trans
-&trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp SLASH             &kp EQUAL  &trans
-&trans  &kp GRAVE       &kp TILDE         &kp UNDERSCORE     &kp EQUAL        &kp PERIOD    &kp LEFT_BRACKET      &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp NON_US_BACKSLASH  &to 3      &trans
-                                          &trans             &trans           &trans        &trans                &trans                 &trans
+&trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4     &kp N5        &kp NUMBER_6  &kp N7     &kp N8     &kp N9                &kp N0     &trans
+&trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PLUS      &kp PLUS      &kp MINUS  &kp PIPE   &kp SLASH             &kp EQUAL  &trans
+&trans  &kp GRAVE       &kp TILDE         &kp UNDERSCORE     &kp EQUAL        &kp PERIOD    &kp ASTERISK  &kp SLASH  &kp EQUAL  &kp NON_US_BACKSLASH  &to 3      &trans
+                                          &trans             &trans           &trans        &trans        &trans     &trans
             >;
         };
 
-        numberfield {
+        movementNumber {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp F4        &kp KP_MULTIPLY  &kp SLASH     &kp MINUS     &kp PLUS        &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER     &trans
-&trans  &kp F1        &kp F5           &kp F12       &kp EQUAL     &kp PERIOD      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &to 3         &trans
-                                       &trans        &trans        &trans          &trans        &trans        &trans
+&trans  &kp HOME  &kp UP_ARROW    &kp END    &kp NUMBER_4  &kp F5       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp PLUS      &kp MINUS    &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER     &trans
+&trans  &kp F1    &kp F5          &kp F12    &kp ASTERISK  &kp SLASH    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &to 3         &trans
+                                  &trans     &trans        &trans       &trans        &trans        &trans
             >;
         };
 
