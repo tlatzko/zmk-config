@@ -9,18 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -56,10 +44,10 @@
 
         movementNumber {
             bindings = <
-&trans  &kp HOME  &kp UP_ARROW    &kp END    &kp NUMBER_4  &kp F5       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp PLUS      &kp MINUS    &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER     &trans
-&trans  &kp F1    &kp F5          &kp F12    &kp ASTERISK  &kp SLASH    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &to 3         &trans
-                                  &trans     &trans        &trans       &trans        &trans        &trans
+&trans  &kp F1    &kp F2          &kp F3     &kp F4        &kp F5       &kp F6          &kp F7        &kp F8        &kp F9        &kp F10  &trans
+&trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp PLUS      &kp MINUS    &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN      &kp RIGHT     &kp END  &trans
+&trans  &kp F1    &kp F11         &kp F12    &kp ASTERISK  &kp SLASH    &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &to 3    &trans
+                                  &trans     &trans        &trans       &trans          &trans        &trans
             >;
         };
 
