@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-      behaviors {
+    behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -19,7 +19,8 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-      };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,10 +47,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4     &kp N5        &kp NUMBER_6  &kp N7     &kp N8     &kp N9                &kp N0     &trans
-&trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PLUS      &kp PLUS      &kp MINUS  &kp PIPE   &kp SLASH             &kp EQUAL  &trans
-&trans  &kp GRAVE       &kp TILDE         &kp UNDERSCORE     &kp EQUAL        &kp PERIOD    &kp ASTERISK  &kp SLASH  &kp EQUAL  &kp NON_US_BACKSLASH  &to 3      &trans
-                                          &trans             &trans           &trans        &trans        &trans     &trans
+&trans  &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3          &kp NUMBER_4  &kp N5          &kp NUMBER_6    &kp N7                &kp N8                 &kp N9                &kp N0     &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE              &kp MINUS     &kp PLUS        &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE       &kp EQUAL  &trans
+&trans  &kp GRAVE      &kp TILDE         &kp NON_US_BACKSLASH  &kp SLASH     &kp ASTERISK    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &to 3      &trans
+                                         &trans                &trans        &trans          &trans          &trans                &trans
             >;
         };
 
