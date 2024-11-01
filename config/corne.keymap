@@ -42,10 +42,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp SQT        &kp COMMA   &kp PERIOD        &kp P       &kp Y        &kp F      &kp G             &kp C         &kp R       &kp L        &kp BSPC
-&kp ESCAPE  &hm LCTRL A    &hm RALT O  &hm LEFT_SHIFT E  &hm LGUI U  &kp I        &kp D      &hm LGUI H        &hm RSHIFT T  &hm RALT N  &hm RCTRL S  &kp MINUS
-&kp LCTRL   &kp SEMICOLON  &kp Q       &kp J             &kp K       &kp X        &kp B      &kp M             &kp W         &kp V       &kp Z        &kp ENTER
-                                       &kp ESC           &mo 1       &kp SPACE    &kp ENTER  &HomeLayer 2 TAB  &kp TAB
+&kp TAB     &kp SQT        &kp COMMA   &kp PERIOD        &kp P       &kp Y        &kp F      &kp G             &kp C          &kp R       &kp L        &kp BSPC
+&kp ESCAPE  &hm LCTRL A    &hm RALT O  &hm LEFT_SHIFT E  &hm LGUI U  &kp I        &kp D      &hm LGUI H        &hm RSHIFT T   &hm RALT N  &hm RCTRL S  &kp MINUS
+&kp LCTRL   &kp SEMICOLON  &kp Q       &kp J             &kp K       &kp X        &kp B      &kp M             &kp W          &kp V       &kp Z        &kp ENTER
+                                       &kp ESC           &mo 1       &kp SPACE    &kp ENTER  &HomeLayer 2 TAB  &kp BACKSPACE
             >;
         };
 
