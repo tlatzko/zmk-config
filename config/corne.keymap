@@ -14,10 +14,20 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        HomeLayer: HomeLayer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMELAYER";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -32,10 +42,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp SQT        &kp COMMA   &kp PERIOD   &kp P       &kp Y        &kp F           &kp G       &kp C        &kp R       &kp L  &kp BSPC
-&kp ESCAPE  &kp A          &hm RALT O  &hm LCTRL E  &hm LGUI U  &kp I        &kp D           &hm LGUI H  &hm LCTRL T  &hm RALT N  &kp S  &kp MINUS
-&kp LCTRL   &kp SEMICOLON  &kp Q       &kp J        &kp K       &kp X        &kp B           &kp M       &kp W        &kp V       &kp Z  &kp ENTER
-                                       &kp ESC      &mo 1       &kp SPACE    &kp LEFT_SHIFT  &mo 2       &kp TAB
+&kp TAB     &kp SQT        &kp COMMA   &kp PERIOD        &kp P       &kp Y        &kp F      &kp G             &kp C         &kp R       &kp L        &kp BSPC
+&kp ESCAPE  &hm LCTRL A    &hm RALT O  &hm LEFT_SHIFT E  &hm LGUI U  &kp I        &kp D      &hm LGUI H        &hm RSHIFT T  &hm RALT N  &hm RCTRL S  &kp MINUS
+&kp LCTRL   &kp SEMICOLON  &kp Q       &kp J             &kp K       &kp X        &kp B      &kp M             &kp W         &kp V       &kp Z        &kp ENTER
+                                       &kp ESC           &mo 1       &kp SPACE    &kp ENTER  &HomeLayer 2 TAB  &kp TAB
             >;
         };
 
@@ -47,10 +57,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp NUMBER_1   &kp NUMBER_2                &kp NUMBER_3          &kp NUMBER_4        &kp N5          &kp NUMBER_6    &kp N7                     &kp N8                   &kp N9                     &kp N0     &trans
-&trans  &kp LESS_THAN  &hm RIGHT_ALT GREATER_THAN  &hm LCTRL PIPE        &hm LEFT_GUI MINUS  &kp PLUS        &kp LEFT_BRACE  &hm LEFT_BRACKET LEFT_GUI  &hm RCTRL RIGHT_BRACKET  &hm RIGHT_ALT RIGHT_BRACE  &kp EQUAL  &trans
-&trans  &kp GRAVE      &kp TILDE                   &kp NON_US_BACKSLASH  &kp SLASH           &kp ASTERISK    &kp ASTERISK    &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS    &kp NON_US_BACKSLASH       &to 3      &trans
-                                                   &trans                &trans              &trans          &trans          &trans                     &trans
+&trans  &kp NUMBER_1                &kp NUMBER_2                &kp NUMBER_3          &kp NUMBER_4        &kp N5          &kp NUMBER_6    &kp N7                     &kp N8                         &kp N9                     &kp N0           &trans
+&trans  &hm LEFT_CONTROL LESS_THAN  &hm RIGHT_ALT GREATER_THAN  &hm LEFT_SHIFT PIPE   &hm LEFT_GUI MINUS  &kp PLUS        &kp LEFT_BRACE  &hm LEFT_BRACKET LEFT_GUI  &hm RIGHT_SHIFT RIGHT_BRACKET  &hm RIGHT_ALT RIGHT_BRACE  &hm RCTRL EQUAL  &trans
+&trans  &kp GRAVE                   &kp TILDE                   &kp NON_US_BACKSLASH  &kp SLASH           &kp ASTERISK    &kp ASTERISK    &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &kp NON_US_BACKSLASH       &to 3            &trans
+                                                                &trans                &trans              &trans          &trans          &trans                     &trans
             >;
         };
 
